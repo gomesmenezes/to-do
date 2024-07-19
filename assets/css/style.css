@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-typo: #444444;
+    --text-muted: #BEBEBE;
+    --border-color: #D9D9D9;
+    --brand-style: #E1A0FF;
+    --background-main: #E8ECF1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background-main);
+}
+
+#container-html {
+    background-color: #FFFFFF;
+
+    margin: 69px auto;
+
+    border-radius: 30px;
+
+    width: 640px;
+    height: 850px;
+}
+
+#main-section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+#heading-main {
+    color: var(--text-typo);
+    font-weight: bold;
+    font-size: 30px;
+
+    margin-top: 14px;
+    margin-bottom: 7px;
+}
+
+#subheading-main {
+    margin-bottom: 13px;
+}
+
+
+#inputs {
+    display: grid;
+    margin: 0 auto 50px;
+    width: 374px;
+    gap: 10px;
+
+    justify-content: center;
+}
+
+#inputs-first {
+    grid-column: 1 / 2;
+    /* Primeiro input na primeira coluna */
+    grid-row: 2 / 3;
+    /* Segunda linha */
+}
+
+#inputs-second {
+    grid-column: 2 / 3;
+    /* Segundo input na segunda coluna */
+    grid-row: 2 / 3;
+    /* Segunda linha */
+}
+
+#btn-inputs {
+    grid-column: 3 / 4;
+    /* Botão na terceira coluna */
+    grid-row: 2 / 3;
+    /* Segunda linha */
+    width: 68px;
+    cursor: pointer;
+}
+
+
+.inputs-input {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+
+#btn-inputs {
+    border: none;
+    border-radius: 6px;
+    height: 41px;
+    color: #FFFFFF;
+    background: var(--brand-style);
+
+    grid-column: 3 / 4;
+    /* Move o botão para a terceira coluna */
+    grid-row: 2 / 3;
+    /* Move o botão para a segunda linha */
+}
+
+
+#to-do-section {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+}
+
+.list-item {
+    display: flex;
+
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.separator-to-do {
+    width: 374px;
+    margin: 0 auto 15px;
+}
+
+#text-to-do-section {
+    margin: 0px 30px 0px 10px;
+    width: 289px;
+}
+
+#trash-division {
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+#trash { 
+    cursor: pointer;
+}
+
+#done-section { 
+    display: flex;
+}
+
+#h1-done-section {
+    text-align: center;
+    margin-bottom: 30px;
+
+    color: var(--text-typo);
+}
+
+.circular-button {
+    width: 27px;
+    height: 27px;
+    background-color: #FFFFFF;
+    border: 2px solid #D9D9D9;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.circular-button::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.heading-list {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.subheading {
+    color: var(--text-muted);
+
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.heading-done {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.subheading-done,
+.heading-done {
+    color: var(--text-muted);
+    text-decoration: line-through;
+}
+
+
+@media screen and (max-width: 430px) {
+    body {
+        background-color: #FFFFFF;
+    }
+
+    #container-html {
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    #main-section {
+        padding: 0PX 0px 27px;
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #subheading-main {
+        margin-bottom: 22px;
+    }
+
+    #inputs {
+        margin: 0px auto 70px;
+        width: 374px;
+
+    }
+
+    #inputs-first {
+        width: 183px;
+        height: 41px;
+    }
+
+    #inputs-second {
+        width: 109px;
+    }
+
+    #to-do-section {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        margin: 0px 26px 0px;
+    }
+
+    .list-item {
+        display: flex;
+
+        margin-bottom: 15px;
+    }
+
+    #text-to-do-section {
+        margin: 0px 30px 0px 10px;
+        width: 289px;
+    }
+
+
+    #done-section {
+        display: flex;
+    }
+
+    .done-section {
+        margin: 0px 26px 20px;
+
+    }
+
+    #trash-division {
+        margin: 26px auto 14px;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #h1-done-section {
+        text-align: center;
+
+        color: var(--text-typo);
+
+        font-size: 30px;
+        font-weight: 500;
+
+        margin-bottom: 25px;
+    }
+
+    .separator-to-do {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    #inputs {
+        width: 90%;
+    }
+
+    #inputs-first {
+        width: 100%;
+        height: 41px;
+    }
+
+    #inputs-second {
+        width: 100%;
+    }
+
+    #main-section {
+        width: 100%;
+    }
+}

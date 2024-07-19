@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do Shop</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/icon-shop.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="container-html">
+
+        <div id="main-section">
+            <img id="logo-to-do" src="./assets/img/icon-shop.svg" alt="Logo To-do">
+            <h1 class="heading" id="heading-main">Lista de Compras</h1>
+            <p class="subheading" id="subheading-main">Facilite sua ida ao supermercado!</p>
+            <img src="./assets/img/separator.svg" alt="Traço img">
+        </div>
+
+        <div id="inputs">
+            <label class="subheading" id="subheading-item" for="Item">Item</label>
+            <label class="subheading" id="subheading-quantity" for="Quantidade">Quantidade</label>
+
+            <input class="inputs-input" id="inputs-first" type="text">
+            <input class="inputs-input" id="inputs-second" type="number">
+
+            <button id="btn-inputs">+</button>
+        </div>
+
+        <div id="to-do-section">
+
+            <div class="list-item">
+
+                <div class="btn-to-do">
+                    <button class="circular-button"></button>
+                </div>
+
+                <div id="text-to-do-section">
+                    <h1 class="heading-list" id="heading-text-to-do">Leite</h1>
+                    <p class="subheading">3 Caixas</p>
+                </div>
+
+                <img src="./assets/img/trash-icon.svg" alt="Icone para excluir" id="trash">
+
+            </div>
+
+            <img class="separator-to-do" src="./assets/img/separator.svg" alt="linha separando os inputs">
+
+            <div class="list-item">
+
+                <div class="btn-to-do">
+                    <button class="circular-button"></button>
+                </div>
+
+                <div id="text-to-do-section">
+                    <h1 class="heading-list">Maça</h1>
+                    <p class="subheading">500g</p>
+                </div>
+
+                <img src="./assets/img/trash-icon.svg" alt="Icone para excluir" id="trash">
+
+            </div>
+
+            <img class="separator-to-do" src="./assets/img/separator.svg" alt="linha separando os inputs">
+
+            <div class="list-item">
+
+                <div class="btn-to-do">
+                    <button class="circular-button"></button>
+                </div>
+
+                <div id="text-to-do-section">
+                    <h1 class="heading-list">Amaciante</h1>
+                </div>
+
+                <img src="./assets/img/trash-icon.svg" alt="Icone para excluir" id="trash">
+
+            </div>
+
+            <img class="separator-to-do" src="./assets/img/separator.svg" alt="linha separando os inputs">
+
+        </div>
+
+        <img id="trash-division" src="./assets/img/separator.svg" alt="Traço de divisão de sections">
+
+        <div class="done-section">
+            <h1 id="h1-done-section">Itens já comprados</h1>
+
+            <div class="list-item">
+
+                <img id="done-icon" src="./assets/img/done-icon.svg" alt="Done icon">
+
+                <div id="text-to-do-section">
+                    <h1 class="heading-done">Refrigerante</h1>
+                    <p class="subheading-done">2 Litros</p>
+                </div>
+
+                <img src="./assets/img/trash-icon.svg" alt="Icone para excluir" id="trash">
+
+            </div>
+
+            <div class="list-item">
+
+                <img id="done-icon" src="./assets/img/done-icon.svg" alt="Done icon">
+
+                <div id="text-to-do-section">
+                    <h1 class="heading-done">Pasta de dente</h1>
+                    <p class="subheading-done">2</p>
+                </div>
+
+                <img src="./assets/img/trash-icon.svg" alt="Icone para excluir" id="trash">
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
